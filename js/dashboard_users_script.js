@@ -1,7 +1,7 @@
 // Sample user data
 let users = [
-    { name: 'John Doe', email: 'john@example.com', phone: '123-456-7890', address: '123 Main St' },
-    { name: 'Jane Smith', email: 'jane@example.com', phone: '987-654-3210', address: '456 Elm St' }
+    { name: 'saddam', email: 'saddam@gmail.com', phone: '017-456-78902', address: 'Bokshibazar' },
+    { name: 'rahim', email: 'rahim@gmail.com', phone: '019-654-32105', address: 'Dhaka' }
 ];
 
 // Function to display users
