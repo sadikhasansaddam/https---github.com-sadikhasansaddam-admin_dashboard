@@ -14,7 +14,7 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <!-- My CSS -->
-    <link rel="stylesheet" href="css/dashboard_style.css" />
+    <link rel="stylesheet" href="css/home-template-styles.css" />
 
     <title>home template</title>
   </head>
@@ -112,6 +112,21 @@
         </form>
         <a href="login.html" class="nav-link">sign in</a>
         <a href="#" class="nav-link">cart</a>
+        <div class="icon-cart">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="16"
+            height="16"
+            fill="currentColor"
+            class="bi bi-cart"
+            viewBox="0 0 16 16"
+          >
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"
+            />
+          </svg>
+          <span>0</span>
+        </div>
         <input type="checkbox" id="switch-mode" hidden />
         <label for="switch-mode" class="switch-mode"></label>
         <a href="#" class="notification">
@@ -132,6 +147,15 @@
         <br />
         <br />
       </main>
+
+      <div class="cartTab">
+        <h1>Shopping Cart</h1>
+        <div class="listCart"></div>
+        <div class="btn">
+          <button class="close">CLOSE</button>
+          <button class="checkOut">Check Out</button>
+        </div>
+      </div>
 
       <!-- MAIN -->
     </section>
