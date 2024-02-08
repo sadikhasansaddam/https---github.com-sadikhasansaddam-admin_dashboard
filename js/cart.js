@@ -7,6 +7,6 @@ let body = document.querySelector('body');
     iconCart.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
     })
-    closeCart.addEventListener('click', () => {
+    closeBtn.addEventListener('click', () => {
         body.classList.toggle('activeTabCart');
     })
