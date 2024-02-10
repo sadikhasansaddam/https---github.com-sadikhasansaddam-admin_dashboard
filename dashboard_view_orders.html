@@ -3,45 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>View Medicine Stock</title>
-    <link rel="stylesheet" href="css/dashboard_view_stock_styles.css" />
+    <title>View Orders</title>
+    <link rel="stylesheet" href="css/dashboard_view_orders_styles.css" />
   </head>
   <body>
     <div class="container">
-      <h2>View Medicine Stock</h2>
+      <h2>View Orders</h2>
       <div id="searchAndFilterContainer">
         <div id="searchContainer">
           <input
             type="text"
             id="searchInput"
-            placeholder="Search for medicine..."
+            placeholder="Search for order..."
           />
         </div>
         <div id="filterContainer">
           <select id="filterSelect">
             <option value="all">All</option>
-            <option value="lowStock">Low Stock</option>
-            <option value="outOfStock">Out of Stock</option>
+            <option value="pending">Pending</option>
+            <option value="confirmed">Confirmed</option>
+            <option value="delivered">Delivered</option>
           </select>
         </div>
       </div>
-      <div id="medicineList">
-        <table id="medicines">
-          <tr>
-            <th>Medicine ID</th>
-            <th>Medicine Name</th>
-            <th>Generic Name</th>
-            <th>Quantity</th>
-          </tr>
-        </table>
-      </div>
+      <table id="orders">
+        <tr>
+          <th>Order ID</th>
+          <th>Order Time</th>
+          <th>Order Status</th>
+          <th>Order Amount</th>
+        </tr>
+      </table>
       <div id="pagination">
         <button id="prevPage">Previous Page</button>
         <button id="nextPage">Next Page</button>
       </div>
     </div>
 
-    <script src="db/medicine_data.js"></script>
-    <script src="js/dashboard_view_stock_scripts.js"></script>
+    <script src="db/order_data.js" type="module"></script>
+    <script src="js/dashboard_view_orders_scripts.js" type="module"></script>
   </body>
 </html>

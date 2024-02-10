@@ -9,7 +9,12 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentPage = 1;
 
     function populateTable(pageNumber,filteredData) {
-      table.innerHTML = ''; // Clear existing rows
+      table.innerHTML = `<tr>
+      <th>Order ID</th>
+      <th>Order Time</th>
+      <th>Order Status</th>
+      <th>Order Amount</th>
+  </tr>`;
       const startIndex = (pageNumber - 1) * ITEMS_PER_PAGE;
       const endIndex = startIndex + ITEMS_PER_PAGE;
       const pageData = filteredData.slice(startIndex, endIndex);

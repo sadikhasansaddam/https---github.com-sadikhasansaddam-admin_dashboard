@@ -1,3 +1,4 @@
+// medicine data
 const medicineData = [
     {
       medicine_id: '1',
@@ -300,4 +301,5 @@ const medicineData = [
       quantity: 70
     }
   ];
-  
+
+

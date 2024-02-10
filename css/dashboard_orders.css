@@ -1,66 +1,53 @@
-/* Reset styles */
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-header, footer {
-    background-color: #333;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
-}
-
-main {
-    padding: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
 }
 
 .container {
     max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
+    margin: 50px auto;
     padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
-h1, h2 {
-    text-align: center;
+h1 {
+    color: #333;
     margin-bottom: 20px;
 }
 
-.order {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin-bottom: 10px;
+.button-container {
+    display: flex;
+    flex-direction: column; /* Display buttons in a column */
+    justify-content: center;
+    align-items: center;
 }
 
-.order p {
-    margin-bottom: 5px;
-}
-
-.order button {
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    padding: 5px 10px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 14px;
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    border: 2px solid #007bff;
+    border-radius: 25px;
     cursor: pointer;
+    margin: 10px 0; /* Adjust margin to add space between buttons */
+    background-color: transparent;
+    color: #007bff;
+    transition: all 0.3s ease;
+    outline: none;
 }
 
-.order button:hover {
-    background-color: #45a049;
+button:hover {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-.details {
-    display: none;
+button:focus {
+    outline: none;
 }

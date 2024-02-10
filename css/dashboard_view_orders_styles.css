@@ -1,0 +1,83 @@
+/* Styles for the View Orders page */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #d1c3c3;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  color: #358688;
+}
+
+#searchAndFilterContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#searchContainer,
+#filterContainer {
+  width: 48%; /* Adjust as needed */
+}
+
+#searchContainer input[type="text"],
+#filterContainer select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+#orderList {
+  margin-bottom: 20px;
+}
+
+#orders {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#orders th,
+#orders td {
+  padding: 8px;
+  margin-top: 100px;
+  text-align: left;
+  border-bottom: 1px solid #176518;
+}
+
+#orders th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+#pagination {
+  margin-top: 20px;
+  text-align: center;
+}
+
+#pagination button {
+  padding: 8px 16px;
+  margin: 0 5px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#pagination button:hover {
+  background-color: #0056b3;
+}
