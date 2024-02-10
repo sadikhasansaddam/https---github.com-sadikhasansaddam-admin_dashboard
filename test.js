@@ -45,4 +45,4 @@ document.addEventListener('DOMContentLoaded', () => {
     filterSelect.addEventListener('change', () => {
       filterData(searchInput.value, filterSelect.value);
     });
-  });
+  });  
