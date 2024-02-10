@@ -7,7 +7,7 @@ const button4 = document.getElementById('button4');
 // Add click event listeners to the buttons
 button1.addEventListener('click', () => {
   // Navigate to another page when button 1 is clicked
-  window.location.href = 'page1.html';
+  window.location.href = 'dashboard_view_stock.html';
 });
 
 button2.addEventListener('click', () => {
