@@ -1,3 +1,4 @@
+
 const allSideMenu = document.querySelectorAll('#sidebar .side-menu.top li a');
 
 allSideMenu.forEach(item=> {
@@ -63,20 +64,18 @@ switchMode.addEventListener('change', function () {
 })
 
 
-
-
 let iconCart = document.querySelector('.icon-cart');
 let closeBtn = document.querySelector('.cartTab .close');
 let body = document.querySelector('body');
 
 
-    // open and close cart tab
-    iconCart.addEventListener('click', () => {
-        body.classList.toggle('activeTabCart');
-    })
-    closeBtn.addEventListener('click', () => {
-        body.classList.toggle('activeTabCart');
-    })
-
+	// open and close cart tab
+	iconCart.addEventListener('click', () => {
+		body.classList.toggle('activeTabCart');
+	})
+	closeBtn.addEventListener('click', () => {
+		body.classList.toggle('activeTabCart');
+	})
+	
 
 
