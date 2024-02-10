@@ -23,6 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
         `;
         table.appendChild(row);
       });
+        updatePaginationButtons();
     }
   
     function filterAndPaginate(searchTerm, filterValue) {
@@ -41,6 +42,21 @@ document.addEventListener('DOMContentLoaded', () => {
       });
       populateTable(currentPage, filteredData);
     }
+
+    function updatePaginationButtons() {
+        if (currentPage === 1) {
+            prevPageButton.style.display = 'none';
+        } else {
+            prevPageButton.style.display = 'inline-block';
+        }
+    
+        const totalPages = Math.ceil(medicineData.length / ITEMS_PER_PAGE);
+        if (currentPage === totalPages || totalPages === 0) {
+            nextPageButton.style.display = 'none';
+        } else {
+            nextPageButton.style.display = 'inline-block';
+        }
+        }
   
     // Initial population of the table
     filterAndPaginate('', 'all');
