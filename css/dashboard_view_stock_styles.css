@@ -9,17 +9,18 @@ body {
     max-width: 800px;
     margin: 20px auto;
     padding: 20px;
-    background-color: #fff;
+    background-color: #d1c3c3;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     text-align: center;
+    color: #358688;
 }
 
 #medicineList {
-    margin-bottom: 20px;
+    margin-bottom: 150px;
 }
 
 #medicines {
@@ -31,18 +32,10 @@ h2 {
 #medicines td {
     padding: 8px;
     text-align: left;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #176518;
 }
 
 #medicines th {
     background-color: #4CAF50;
     color: white;
-}
-
-.update-btn {
-    padding: 6px 12px;
-    background-color: #4CAF50;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
 }

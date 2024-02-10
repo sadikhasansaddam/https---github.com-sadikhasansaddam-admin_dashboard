@@ -1,26 +1,27 @@
-// Get the buttons
-const button1 = document.getElementById('button1');
-const button2 = document.getElementById('button2');
-const button3 = document.getElementById('button3');
-const button4 = document.getElementById('button4');
+// Get references to the buttons
+const viewStockButton = document.getElementById('view-stock');
+const updateStockButton = document.getElementById('update-stock');
+const addProductButton = document.getElementById('add-product');
+const removeProductButton = document.getElementById('remove-product');
 
-// Add click event listeners to the buttons
-button1.addEventListener('click', () => {
-  // Navigate to another page when button 1 is clicked
-  window.location.href = 'dashboard_view_stock.html';
+// Add event listeners to the buttons
+viewStockButton.addEventListener('click', () => {
+  // Navigate to the view stock page
+  window.location.href = '../dashboard_view_stock.html';
 });
 
-button2.addEventListener('click', () => {
-  // Navigate to another page when button 2 is clicked
-  window.location.href = 'page2.html';
+updateStockButton.addEventListener('click', () => {
+  // Navigate to the update stock page
+  window.location.href = 'update_stock.html';
 });
 
-button3.addEventListener('click', () => {
-  // Navigate to another page when button 3 is clicked
-  window.location.href = 'page3.html';
+addProductButton.addEventListener('click', () => {
+  // Navigate to the add product page
+  window.location.href = 'add_product.html';
 });
 
-button4.addEventListener('click', () => {
-  // Navigate to another page when button 4 is clicked
-  window.location.href = 'page4.html';
+removeProductButton.addEventListener('click', () => {
+  // Navigate to the remove product page
+  window.location.href = 'remove_product.html';
 });
+

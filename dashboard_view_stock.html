@@ -4,95 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>View Medicine Stock</title>
-    <link rel="stylesheet" href="css/dashboard_view_stock_style.css" />
+    <link rel="stylesheet" href="css/dashboard_view_stock_styles.css" />
   </head>
   <body>
     <div class="container">
       <h2>View Medicine Stock</h2>
-      <div id="medicineList">
-        <h3>Medicine Stock:</h3>
-        <table id="medicines">
-          <tr>
-            <th>Medicine ID</th>
-            <th>Generic Name</th>
-            <th>Medicine Name</th>
-            <th>Quantity</th>
-            <th>Action</th>
-          </tr>
-
-          <tr>
-            <td>1234</td>
-            <td>Paracetamol</td>
-            <td>Napa Rapid</td>
-            <td>100</td>
-            <td>
-              <a href="dashboard_update_stock.html" class="update-btn"
-                >Update</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>2346</td>
-            <td>Paracetamol</td>
-            <td>Napa ace</td>
-            <td>30</td>
-            <td>
-              <a href="dashboard_update_stock.html" class="update-btn"
-                >Update</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>1234</td>
-            <td>Paracetamol</td>
-            <td>Napa</td>
-            <td>100</td>
-            <td>
-              <a href="dashboard_update_stock.html" class="update-btn"
-                >Update</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>5671</td>
-            <td>Paracetamol</td>
-            <td>Napa Ace</td>
-            <td>100</td>
-            <td>
-              <a href="dashboard_update_stock.html" class="update-btn"
-                >Update</a
-              >
-            </td>
-          </tr>
-          <tr>
-            <td>1257</td>
-            <td>Paracetamol</td>
-            <td>Renova 500</td>
-            <td>70</td>
-            <td>
-              <a href="dashboard_update_stock.html" class="update-btn"
-                >Update</a
-              >
-            </td>
-          </tr>
-        </table>
-
-
-
-      </div>
-      <div id="addUserForm">
-        <h3>Add Medicine :</h3>
-        <input type="text" id="medicinename" placeholder="medicinename" />
-        <input type="email" id="genericname" placeholder="genericname" />
-        <input type="text" id="phone" placeholder="quantity" />
-        <input type="text" id="address" placeholder="id" />
-        <button onclick="addUser()">Add User</button>
+      <div id="searchContainer">
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Search for medicine..."
+        />
+        <select id="filterSelect">
+          <option value="all">All</option>
+          <option value="lowStock">Low Stock</option>
+          <option value="outOfStock">Out of Stock</option>
+        </select>
       </div>
     </div>
 
-      </div>
-    </div>
-
-
+    <script src="data.js"></script>
+    <script src="js/dashboard_view_stock_scripts.js"></script>
   </body>
 </html>
