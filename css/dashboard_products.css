@@ -2,15 +2,25 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #bb7878;
+  }
+  
+  .container {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .heading {
+    background-color: #1c1d1d9d;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 15px;
+    width: 250px; /* Fixed width for consistency */
+    display: inline-block;
   }
   
   .button-container {
-    text-align: center; /* Center the buttons horizontally */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 20px;
   }
   
   button {
@@ -25,22 +35,22 @@ body {
     display: block; /* Each button on a new line */
   }
   
-  #button1 {
+  #view-stock {
     background-color: #007bff;
     color: #fff;
   }
   
-  #button2 {
+  #update-stock {
     background-color: #28a745;
     color: #fff;
   }
   
-  #button3 {
+  #add-product {
     background-color: #dc3545;
     color: #fff;
   }
   
-  #button4 {
+  #remove-product {
     background-color: #ffc107;
     color: #fff;
   }
@@ -48,4 +58,4 @@ body {
   button:hover {
     opacity: 0.8;
   }
-  
+    
