@@ -19,6 +19,26 @@ h2 {
     color: #358688;
 }
 
+#searchAndFilterContainer {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+  
+  #searchContainer,
+  #filterContainer {
+    width: 48%; /* Adjust as needed */
+  }
+  
+  #searchContainer input[type="text"],
+  #filterContainer select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
 #medicineList {
     margin-bottom: 20px;
 }
