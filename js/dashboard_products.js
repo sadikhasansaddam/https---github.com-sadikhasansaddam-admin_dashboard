@@ -12,7 +12,7 @@ viewStockButton.addEventListener('click', () => {
 
 updateStockButton.addEventListener('click', () => {
   // Navigate to the update stock page
-  window.location.href = 'update_stock.html';
+  window.location.href = '../dashboard_updateStock.html';
 });
 
 addProductButton.addEventListener('click', () => {

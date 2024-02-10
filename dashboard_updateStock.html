@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Update Medicine Stock</title>
+    <link rel="stylesheet" href="css/dashboard_updateStock_styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Update Medicine Stock</h1>
+      <form id="stockForm">
+        <label for="medicineId">Medicine ID:</label>
+        <input type="text" id="medicineId" required />
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required />
+        <button type="submit">Update Stock</button>
+      </form>
+      <div id="stockDisplay"></div>
+    </div>
+
+    <script src="./db/medicine_data.js"></script>
+    <script src="./js/dashboard_updateStock_scripts.js"></script>
+  </body>
+</html>
