@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Analytics Dashboard</title>
+    <link rel="stylesheet" href="css/dashboard_analytics_styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Analytics Dashboard</h1>
+      <div class="filter-options">
+        <button class="filter-option" data-filter="days">Last 24 Hours</button>
+        <button class="filter-option" data-filter="weeks">Last 7 Days</button>
+        <button class="filter-option" data-filter="months">Last 30 Days</button>
+      </div>
+      <div class="charts-container">
+        <div class="chart">
+          <canvas id="salesChart" width="400" height="300"></canvas>
+        </div>
+        <div class="chart">
+          <canvas id="revenueChart" width="400" height="300"></canvas>
+        </div>
+        <div class="chart">
+          <canvas id="stockChart" width="400" height="300"></canvas>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.0/chart.min.js"></script>
+    <script src="js/dashboard_analytics_scripts.js"></script>
+  </body>
+</html>

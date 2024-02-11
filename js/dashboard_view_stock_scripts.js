@@ -10,11 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function populateTable(pageNumber,filteredData) {
       table.innerHTML = `<tr>
-      <th>Order ID</th>
-      <th>Order Time</th>
-      <th>Order Status</th>
-      <th>Order Amount</th>
-  </tr>`;
+      <th>Medicine ID</th>
+      <th>Medicine Name</th>
+      <th>Generic Name</th>
+      <th>Quantity</th>
+    </tr>`;
       const startIndex = (pageNumber - 1) * ITEMS_PER_PAGE;
       const endIndex = startIndex + ITEMS_PER_PAGE;
       const pageData = filteredData.slice(startIndex, endIndex);
